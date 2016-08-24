@@ -1,0 +1,50 @@
+==========================================================
+
+    MTP - Minus Top-k Partition
+    Author: Yongsub Lim (yongsub@kaist.ac.kr), and U Kang
+    Version: 2.0
+	Release date: Dec 8, 2014
+    
+==========================================================
+
+This software is free of charge under research purposes.
+For commercial purposes, please contact the author.
+
+MTP is an algorithm to find a set of nodes in a graph so that its subgraph has 
+higher quality graph partitions that the original graph.
+
+gbMTP, an extension of MTP, is an algorithm to find a global balanced partition.
+
+
+
+HOW TO RUN
+==
+Below, we use #MTP_ROOT#, #METIS_ROOT#, and #METISMEX_ROOT# to denote
+the root directories of MTP, METIS, and metismex, respectively.
+
+1. Download Packages
+MTP requries 
+	a) METIS, a graph partitioning library provided in 
+		http://glaros.dtc.umn.edu/gkhome/metis/metis/download, and
+	b) its MATLAB interface 'metismex' provided in 
+		https://github.com/dgleich/metismex.
+
+2. Prepare METIS
+Move #METIS_ROOT# below #MTP_ROOT#. 
+To compile METIS, read BUILD.txt and Install.txt in #METIS_ROOT#. 
+	
+3. Prepare metismex 
+	a) Rename #METISMEX_ROOT# to 'metismex'.
+	b) Copy #METISMEX_ROOT# below #METIS_ROOT#.
+	d) Run make.m in #METISMEX_ROOT#.
+
+4. Prepare mex for MTP
+Run mex_compile.m in #MTP_ROOT$.
+	
+4. Run demo
+Run demo.m in the MATLAB command.
+Our tests were done on 64bit Linux with METIS version 5.1.0.
+
+
+
+For further questions, contact Yongsub Lim (yongsub@kaist.ac.kr).
