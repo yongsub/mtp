@@ -3,7 +3,7 @@
     MTP - Minus Top-k Partition
     Author: Yongsub Lim (yongsub@kaist.ac.kr), and U Kang
     Version: 2.0
-	Release date: Dec 8, 2014
+    Release date: Dec 8, 2014
     
 ==========================================================
 
@@ -14,6 +14,9 @@ MTP is an algorithm to find a set of nodes in a graph so that its subgraph has
 higher quality graph partitions that the original graph.
 
 gbMTP, an extension of MTP, is an algorithm to find a global balanced partition.
+
+For details of the methods, we refer to the following paper:
+Yongsub Lim, Won-Jo Lee, Ho-Jin Choi, and U Kang. "MTP: Discovering high quality partitions in real world graphs." World Wide Web Journal, 2016.
 
 
 
